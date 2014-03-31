@@ -1,0 +1,10 @@
+<h1>Task Tortoise</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+  <a href="/tasks/<%= task.id %>"><li><%= task.name %></li></a>
+  <% end %>
+</ul>
+
+
+<p><a href="tasks/new">Create Task</a></p>
